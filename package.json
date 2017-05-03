@@ -1,8 +1,9 @@
 {
   "name": "connection-adapter",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Connection interface used by different spotware modules.",
   "main": "lib/adapter.d.ts",
+  "typings": "lib/adapter",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spotware/connection-adapter.git"
