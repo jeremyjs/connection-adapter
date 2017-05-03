@@ -1,7 +1,7 @@
 export interface IMessageWithId {
     payloadType: number,
-    payload?: Object,
-    clientMsgId?: string
+    payload: Object,
+    clientMsgId: string
 }
 
 export enum AdapterConnectionStates {
@@ -11,16 +11,16 @@ export enum AdapterConnectionStates {
 }
 
 export interface Subscription<T> {
-    unsubscribe: (...params) => any;
+    unsubscribe: () => void;
 }
 
 export interface Subscribable<T> {
-    subscribe: (callback: (data: T) => any) => Subscription<T>;
+    subscribe: (callback: (data: T) => void) => Subscription<T>;
 }
 
 export interface ConnectionAdapter {
     send: (data: IMessageWithId) => void;
     state: Subscribable <AdapterConnectionStates>;
     data: Subscribable <IMessageWithId>;
-    connect: (...connectionParams) => any;
+    connect: (url: string) => void;
 }
