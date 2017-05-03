@@ -1,20 +1,17 @@
-import {Observable} from 'rxjs';
-
+import { Observable } from 'rxjs';
 export interface IdMessage {
-    payloadType: number,
-    payload: Object,
-    clientMsgId: string
+    payloadType: number;
+    payload: Object;
+    clientMsgId: string;
 }
-
-export enum AdapterConnectionStates {
+export declare enum AdapterConnectionStates {
     CONNECTED = 1,
     DISCONNECTED = 2,
-    CONNECTING = 3
+    CONNECTING = 3,
 }
-
 export interface ConnectionAdapter {
     send: (data: IdMessage) => void;
-    state: Observable <AdapterConnectionStates>;
-    data: Observable <IdMessage>;
+    state: Observable<AdapterConnectionStates>;
+    data: Observable<IdMessage>;
     connect: (url: string) => void;
 }

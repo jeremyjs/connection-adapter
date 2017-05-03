@@ -1,9 +1,12 @@
 {
   "name": "connection-adapter",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Connection interface used by different spotware modules.",
-  "main": "lib/adapter.d.ts",
+  "main": "lib/adapter.js",
   "typings": "lib/adapter",
+  "scripts": {
+    "start": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spotware/connection-adapter.git"
@@ -15,6 +18,7 @@
   },
   "homepage": "https://github.com/spotware/connection-adapter#readme",
   "devDependencies": {
-    "rxjs": "5.3.0"
+    "rxjs": "5.3.0",
+    "typescript": "^2.3.2"
   }
 }
