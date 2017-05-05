@@ -1,6 +1,6 @@
 import {Observable} from 'rxjs';
 
-export interface IMessageWithId {
+export interface IdMessage {
     payloadType: number,
     payload: Object,
     clientMsgId: string
@@ -12,9 +12,9 @@ export enum AdapterConnectionStates {
     CONNECTING = 3
 }
 
-export interface IConnectionAdapter {
-    send: (data: IMessageWithId) => void;
+export interface ConnectionAdapter {
+    send: (data: IdMessage) => void;
     state: Observable <AdapterConnectionStates>;
-    data: Observable <IMessageWithId>;
+    data: Observable <IdMessage>;
     connect: (url: string) => void;
 }
