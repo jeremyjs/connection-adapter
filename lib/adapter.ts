@@ -12,7 +12,7 @@ export enum AdapterConnectionStates {
     CONNECTING = 3
 }
 
-export interface ConnectionAdapter {
+export interface IConnectionAdapter {
     send: (data: IdMessage) => void;
     state: Observable <AdapterConnectionStates>;
     data: Observable <IdMessage>;
