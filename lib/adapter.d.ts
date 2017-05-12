@@ -11,7 +11,7 @@ export declare enum AdapterConnectionStates {
 }
 export interface IConnectionAdapter {
     send: (data: IMessageWithId) => void;
-    state: Observable<AdapterConnectionStates>;
-    data: Observable<IMessageWithId>;
+    state$: Observable<AdapterConnectionStates>;
+    data$: Observable<IMessageWithId>;
     connect: (url: string) => void;
 }

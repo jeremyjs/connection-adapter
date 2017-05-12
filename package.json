@@ -1,6 +1,6 @@
 {
   "name": "connection-adapter",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "Connection interface used by different spotware modules.",
   "main": "lib/adapter.js",
   "typings": "lib/adapter",
