@@ -1,9 +1,9 @@
 {
   "name": "connection-adapter",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Connection interface used by different spotware modules.",
   "main": "lib/adapter.js",
-  "typings": "lib/adapter",
+  "typings": "lib/adapter.d.ts",
   "scripts": {
     "start": "tsc"
   },
