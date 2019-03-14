@@ -1,6 +1,6 @@
 {
   "name": "connection-adapter",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "Connection interface used by different spotware modules.",
   "main": "lib/adapter.js",
   "typings": "lib/adapter.d.ts",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/spotware/connection-adapter#readme",
   "peerDependencies": {
-    "rxjs": "^5 || ^6",
+    "rxjs": "^5 || ^6"
   },
   "devDependencies": {
     "rxjs": "5.3.0",
